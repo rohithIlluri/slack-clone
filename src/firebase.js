@@ -12,8 +12,8 @@ const firebaseConfig = {
   measurementId: "G-NBDT7SB53R" ,
 };
 
-  const  firebaseApp  = firebase.intializeApp(firebaseConfig);
-  const  db  = firebaseApp.firestore();
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
+  const  db = firebaseApp.firestore();
   const  auth = firebase.auth();
   const provider = new firebase.auth.GoogleAuthProvider();
 

@@ -3,6 +3,7 @@
     background-color: var(--slackcolour);
     border-top: #49274b;
     max-width: 260px;
+    flex: 0.3;
 
 }
 
