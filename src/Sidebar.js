@@ -40,11 +40,7 @@ function Sidebar()  {
                 <h3>
                 <FiberManualRecordIcon/>
                 Rohith Illuri</h3>
-                </div>
-                 
-                 <CreateIcon/>
-                 
-                 </div>
+                </div><CreateIcon/></div>
             <SidebarOption Icon={InsertCommentIcon} title="Threads"/>
             <SidebarOption  title="Youtube"/>
             <SidebarOption Icon={FavoriteIcon} title="Favortite"/>
@@ -59,7 +55,7 @@ function Sidebar()  {
             <hr/>
             <SidebarOption Icon={ExpandMoreIcon} title="Channels"/>
             <hr/>
-            <SidebarOption Icon={AddIcon} title="Add Channel"/>
+            <SidebarOption Icon={AddIcon} addChannelOption title="AddChannel"/>
    
               {/*connect to db and list all the channels*/}
               {/*<sidebaroption.../>*/}
