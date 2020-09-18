@@ -43,10 +43,10 @@ function Sidebar()  {
                 </div><CreateIcon/></div>
             <SidebarOption Icon={InsertCommentIcon} title="Threads"/>
             <SidebarOption  title="Youtube"/>
-            <SidebarOption Icon={FavoriteIcon} title="Favortite"/>
-            <SidebarOption Icon={PermMediaIcon} title="Media"/>
-            <SidebarOption Icon={CreateNewFolderIcon} title="New Folder"/>                    
-            <SidebarOption Icon={DataUsageIcon} title="Usage"/>
+            <SidebarOption Icon={FavoriteIcon} title= "Favortite"/>
+            <SidebarOption Icon={PermMediaIcon} title= "Media"/>
+            <SidebarOption Icon={CreateNewFolderIcon} title= "New Folder"/>                    
+            <SidebarOption Icon={DataUsageIcon} title= "Usage"/>
             <SidebarOption Icon={EmailIcon} title="Email"/>
             <SidebarOption Icon={LibraryMusicIcon} title="Music"/>
             <SidebarOption Icon={MessageIcon} title="Message"/>
@@ -65,7 +65,7 @@ function Sidebar()  {
             ))}
 
     
-        </div> 
+        </div>  
     )
 }
 
