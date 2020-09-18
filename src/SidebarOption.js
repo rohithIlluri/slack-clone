@@ -21,7 +21,6 @@ function SidebarOption ({ Icon, title , id , addChannelOption }) {
         if (channelName){
             db.collection('rooms').add({
                 name:channelName,
-
             });
         }
     };
