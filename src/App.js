@@ -1,15 +1,16 @@
-import React  , { useState } ;
-import './App.css';
+import React  ,
+import './App.css' ;
 import Header from "./Header";
 import "./Header.css";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
 import Login from "./Login" ;
 import { BrowserRouter as Router,Switch,Route } from "react-router-dom"
+import { useStateValue } from "./StateProvider";
 
 
 function App() {
-     const [user, setUser] = const  useState (null);
+     const [ {user}, dispatch] = useStateValue ();
 
   return (
     <div className="app">
@@ -17,9 +18,7 @@ function App() {
           {!user? (
             <h1><Login/></h1>
           ) :(
-
-            <>
-
+            <> 
             <Header/>
             <div className="app__body">
               <Sidebar/> 

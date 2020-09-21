@@ -1,7 +1,28 @@
 import React from 'react'
+import { auth } from './firebase';
 import './Login.css';
+import RadioButtonCheckedIcon  from '@material-ui/icons/RadioButtonChecked';
+import {auth ,provider } from './firebase'
+import { useStateValue } from './StateProvider';
+import {actionTypes} from "./reducer";
 
 function Login() {
+   const [state, dispatch] =useStateValue();
+
+    const signIn = () => {
+        auth
+        .signInWithPopup(provider)
+        .then ((result ) => {
+            console.log(result);
+             dispatch({
+                 type: actionTypes.SET_USER,
+                 user :result.user,
+             });
+        })
+         .catch((error) => {
+            alert(error.message);
+        })
+      }       
     return (
         <div className="login">
             <div className="login__container"></div>
@@ -9,10 +30,10 @@ function Login() {
              alt=""/>
              <h1>sign in to slack-clone HQ</h1>
              <p>slack-clone.google.com</p>
-             <button>Sign in with Google</button>
+             <RadioButtonCheckedIcon onClick={signIn}>Sign in with Google</RadioButtonCheckedIcon>
             
         </div>
     )
-}
+    }
 
 export default Login
